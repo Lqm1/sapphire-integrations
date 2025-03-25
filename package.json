@@ -12,7 +12,7 @@
 		"build": "turbo run build",
 		"docs": "turbo run docs",
 		"typecheck": "turbo run typecheck",
-		"update": "yarn upgrade-interactive",
+		"update": "bunx npm-check-updates -i",
 		"check-update": "turbo run check-update"
 	},
 	"devDependencies": {
@@ -79,5 +79,5 @@
 		"minimist": "^1.2.8"
 	},
 	"prettier": "@sapphire/prettier-config",
-	"packageManager": "yarn@4.7.0"
+	"packageManager": "bun@1.2.5"
 }
