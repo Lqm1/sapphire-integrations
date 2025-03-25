@@ -36,15 +36,15 @@
 	"homepage": "https://github.com/Lqm1/sapphire-integrations/tree/main/packages/api",
 	"scripts": {
 		"lint": "eslint src --ext ts --fix",
-		"build": "tsup && build:types && build:rename-cjs-register",
-		"build:types": "concurrently \"build:types:*\"",
+		"build": "tsup && npm run build:types && npm run build:rename-cjs-register",
+		"build:types": "concurrently \"npm:build:types:*\"",
 		"build:types:cjs": "rollup-type-bundler -d dist/cjs --output-typings-file-extension .cts",
 		"build:types:esm": "rollup-type-bundler -d dist/esm -t .mts",
 		"build:types:cleanup": "tsx ../../scripts/clean-register-imports.mts",
 		"build:rename-cjs-register": "tsx ../../scripts/rename-cjs-register.mts",
 		"typecheck": "tsc -b src",
 		"docs": "typedoc-json-parser",
-		"prepack": "build",
+		"prepack": "npm run build",
 		"bump": "cliff-jumper",
 		"check-update": "cliff-jumper --dry-run"
 	},
