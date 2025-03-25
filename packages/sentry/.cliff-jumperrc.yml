@@ -1,0 +1,10 @@
+name: integration-sentry
+org: Lqm1
+install: true
+packagePath: packages/sentry
+identifierBase: false
+pushTag: true
+githubRelease: true
+githubReleaseLatest: true
+gitRepo: Lqm1/sapphire-integrations
+gitHostVariant: github
