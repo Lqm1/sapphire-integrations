@@ -1,7 +1,3 @@
 {
 	"cSpell.words": ["Dashless"],
-	"sonarlint.connectedMode.project": {
-		"connectionId": "sapphiredev",
-		"projectKey": "sapphiredev_plugins"
-	}
 }
